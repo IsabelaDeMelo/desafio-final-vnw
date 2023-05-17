@@ -12,7 +12,7 @@ export default function NavBar() {
       <div>
         <ul>
           <li><a href="">Séries</a></li>
-          <li><BtnNav>Filmes</BtnNav></li>
+          <li><a href="">Filmes</a></li>
         </ul>
       </div>
       <div>

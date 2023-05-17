@@ -81,6 +81,7 @@ export const Btns = styled.div`
     color: ${({ theme }) => theme.colors.text};
     border: none;
     border-radius: 20px;
+    transition: 0.3s;
   }
 
   button:nth-child(1) {
@@ -89,5 +90,11 @@ export const Btns = styled.div`
 
   button:nth-child(2) {
     background-color: ${({ theme }) => theme.colors.greyTrailerBtn};
+  }
+
+  button:hover {
+    transition: 0.3s;
+    transform: scale(1.05);
+    cursor: pointer;
   }
 `;

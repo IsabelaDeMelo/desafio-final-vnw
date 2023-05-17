@@ -1,18 +1,26 @@
-import React from 'react'
-import GenresBar from "./GenresBar/GenresBar"
-import Latest from "./LatestReleases/Latest"
-import styled from "styled-components"
+import React from "react";
+import GenresBar from "./GenresBar/GenresBar";
+import LatestReleases from "./LatestReleases/Latest";
+import TopRated from "./TopRated/Top";
+import styled from "styled-components";
 
 export const Main = styled.main`
-    height: 80vh;
-    border: 1px solid red;
-`
+  width: 100%;
+  height: 400vh;
+  color: ${({ theme }) => theme.colors.text};
+  background-color: ${({ theme }) => theme.colors.black};
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
 
 export default function main() {
-    return (
-        <Main>
-            <GenresBar />
-            <Latest />
-        </Main>
-    )
+  return (
+    <Main>
+      <GenresBar />
+      <LatestReleases />
+      <TopRated />
+    </Main>
+  );
 }
