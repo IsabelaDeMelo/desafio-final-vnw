@@ -25,9 +25,7 @@ export default function Latest() {
         })
     }
 
-    const breakPoints = [{
-       
-    }];
+    const breakPoints = [];
 
     return (
         <LatestContainer>
@@ -38,6 +36,7 @@ export default function Latest() {
                             <img src={item.image} alt={item.title} />
                             <h3>{item.title}</h3>
                             <span>{item.release_date}</span>
+                            <p>{item.overview}</p>
                         </Card>
                     ))}
                 </Carousel>

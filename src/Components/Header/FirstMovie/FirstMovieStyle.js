@@ -11,6 +11,10 @@ export const MovieContainer = styled.section`
   justify-content: flex-end;
   box-shadow: inset 0 0 15 rem 3rem #000000;
 
+  section {
+    background: linear-gradient(transparent, black);
+  }
+
   h1 {
     font-size: 2.2rem;
   }

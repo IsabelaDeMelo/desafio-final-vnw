@@ -1,5 +1,5 @@
 import React from "react";
-import { MovieContainer, Review, Btns } from "./MoviePageStyle"
+import { MovieContainer, Review, Btns } from "./FirstMovieStyle"
 import star from "../../../Imgs/star2x.png";
 import play from "../../../Imgs/play60.png";
 import trailer from "../../../Imgs/movie50.png";

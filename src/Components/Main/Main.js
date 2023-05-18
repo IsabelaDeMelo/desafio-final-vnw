@@ -3,6 +3,7 @@ import GenresBar from "./GenresBar/GenresBar";
 import LatestReleases from "./LatestReleases/Latest";
 import TopRated from "./TopRated/Top";
 import styled from "styled-components";
+import Header from "../Header/Header"
 
 export const Main = styled.main`
   width: 100%;
@@ -17,10 +18,13 @@ export const Main = styled.main`
 
 export default function main() {
   return (
-    <Main>
-      <GenresBar />
-      <LatestReleases />
-      <TopRated />
-    </Main>
+    <div>
+      <Header />
+      <Main>
+        <GenresBar />
+        <LatestReleases />
+        <TopRated />
+      </Main>
+    </div>
   );
 }
