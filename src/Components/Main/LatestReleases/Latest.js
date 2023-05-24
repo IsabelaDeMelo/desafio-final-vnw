@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import axios from "axios"
-import { LatestContainer, Card } from "./LatestStyle"
+import { LatestContainer, Card, ModalBox } from "./LatestStyle"
 import Carousel from 'react-elastic-carousel'
 import Modal from "react-modal"
 
@@ -47,16 +47,17 @@ export default function Latest() {
                         <img src={item.image} alt={item.title} />
                         <h3>{item.title}</h3>
                         <button onClick={openModal}>SINOPSE</button>
-                        <Modal
-                            isOpen={modalIsOpen}
-                            onRequestClose={closeModal}
-                            contentLabel="Example modal"
-                            overlayClassName="modal-overlay"
-                            className="modal-content" >
-                                <h2>djdjdjdjjdjdj</h2>
-                            <p>{item.overview}</p>
-                            <button onClick={closeModal}>Fechar</button>
-                        </Modal>
+                        <ModalBox>
+                            <Modal
+                                isOpen={modalIsOpen}
+                                onRequestClose={closeModal}
+                                contentLabel="Example modal"
+                                overlayClassName="modal-overlay"
+                                className="modal-content" >
+                                <p>{item.overview}</p>
+                                <button onClick={closeModal}>Fechar</button>
+                            </Modal>
+                        </ModalBox>
                     </Card>
                 ))}
             </Carousel>

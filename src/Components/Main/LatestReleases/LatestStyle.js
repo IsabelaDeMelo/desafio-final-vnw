@@ -15,6 +15,16 @@ export const LatestContainer = styled.section`
   .rec-pagination {
     display: none;
   }
+
+  .rec.rec-arrow {
+    background-color: #738075;
+    opacity: 0.3;
+  }
+
+  .rec.rec-arrow:hover {
+    background-color: #738075;
+    opacity: 1;
+  }
 `;
 
 export const Card = styled.section`
@@ -49,28 +59,10 @@ export const Card = styled.section`
     transition: 0.6s;
     cursor: pointer;
   }
+`;
 
-  //   p {
-  //     position: absolute;
-  //     text-align: center;
-  //     opacity: 1;
-  //     width: 4%;
-  //     font-size: 0.7rem;
-  //     z-index: 10;
-  //   }
-
-  // ::before {
-  //   content: "";
-  //   background: #000000c9;
-  //   opacity: 0.85;
-  //   position: absolute;
-  //   width: 4%;
-  //   height: 0;
-  //   transition: 0.4s ease-in-out;
-  //   bottom: 6.8rem;
-  // }
-
-  // :hover::before {
-  //   height: 100%;
-  // }
+export const ModalBox = styled.div`
+ p {
+  width: 30%;
+ }
 `;

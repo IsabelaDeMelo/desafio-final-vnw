@@ -7,11 +7,22 @@ export const UpcomingContainer = styled.section`
   justify-content: center;
   color: ${({ theme }) => theme.colors.text};
   background-color: ${({ theme }) => theme.colors.black};
+  padding: 7rem 1rem 0 1rem;
 
   h1 {
     font-size: 3rem;
     text-align: center;
     padding-bottom: 3rem;
+  }
+
+  .rec.rec-arrow {
+    background-color: #738075;
+    opacity: 0.3;
+  }
+  
+  .rec.rec-arrow:hover {
+    background-color: #738075;
+    opacity: 1;
   }
 `;
 

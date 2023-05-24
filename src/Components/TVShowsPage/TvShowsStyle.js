@@ -3,21 +3,31 @@ import styled from "styled-components";
 export const TVContainer = styled.section`
   color: ${({ theme }) => theme.colors.text};
   background-color: ${({ theme }) => theme.colors.black};
+  max-height: 110vh;
 
   h1 {
     font-size: 3rem;
     text-align: center;
   }
+
+  .rec.rec-arrow {
+    background-color: #738075;
+    opacity: 0.3;
+  }
+  
+  .rec.rec-arrow:hover {
+    background-color: #738075;
+    opacity: 1;
+  }
 `;
 
 export const TVCarousel = styled.section`
   width: 100%;
-  max-height: 110vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 2rem;
-  padding-top: 7rem;
+  padding: 7rem 1rem 0 1rem;
 
   h2 {
     text-align: center;

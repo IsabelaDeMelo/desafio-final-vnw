@@ -25,7 +25,7 @@ export default function NavBar() {
             <a href="">Filtro</a>
           </li>
           <li>
-            <a href="">Login</a>
+            <Link to="/Login">Login</Link>
           </li>
         </ul>
       </div>

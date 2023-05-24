@@ -6,10 +6,21 @@ export const NowContainer = styled.section`
   justify-content: center;
   color: ${({ theme }) => theme.colors.text};
   background-color: ${({ theme }) => theme.colors.black};
+  padding: 0 1rem 0 1rem;
 
   h1 {
     font-size: 3rem;
     text-align: center;
+  }
+
+  .rec.rec-arrow {
+    background-color: #738075;
+    opacity: 0.3;
+  }
+  
+  .rec.rec-arrow:hover {
+    background-color: #738075;
+    opacity: 1;
   }
 `;
 export const NowCarousel = styled.section`

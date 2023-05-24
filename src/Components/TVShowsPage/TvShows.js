@@ -27,22 +27,23 @@ export default function TVShows() {
     }
 
     return (
-        <TVContainer>
-            <NavBar />
-            <TVCarousel>
-                <h2>Em Alta</h2>
-                <Carousel itemsToScroll={2} itemsToShow={2}>
-                    {tvshows.map((item) => (
-                        <TVCard>
-                            <img src={item.image} alt={item.title} />
-                            <div>
-                                <h3>{item.name}</h3>
-                                <p>{item.overview}</p>
-                            </div>
-                        </TVCard>
-                    ))}
-                </Carousel>
-            </TVCarousel>
-        </TVContainer>
+            <TVContainer>
+                <NavBar />
+                <TVCarousel>
+                    <h1>Séries</h1>
+                    <h2>Em Alta</h2>
+                    <Carousel itemsToScroll={2} itemsToShow={2}>
+                        {tvshows.map((item) => (
+                            <TVCard>
+                                <img src={item.image} alt={item.title} />
+                                <div>
+                                    <h3>{item.name}</h3>
+                                    <p>{item.overview}</p>
+                                </div>
+                            </TVCard>
+                        ))}
+                    </Carousel>
+                </TVCarousel>
+            </TVContainer>
     )
 }
