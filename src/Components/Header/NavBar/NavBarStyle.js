@@ -48,7 +48,7 @@ export const NavContainer = styled.section`
         transition: 0.6s;
         text-align: center;
         color: ${({ theme }) => theme.colors.text};
-        background-color: ${({ theme }) => theme.colors.greenMoviesBtn};
+        background-color: ${({ theme }) => theme.colors.green};
         border: none;
         border-radius: 1.5rem;
         box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.363);

@@ -1,6 +1,6 @@
 import React from "react";
 import Nav from "./NavBar/NavBar"
-import MoviePage from "./MoviePage/FirstMovie"
+import MoviePage from "./FirstMovie/FirstMovie"
 import styled from "styled-components"
 
 export const Header = styled.header`

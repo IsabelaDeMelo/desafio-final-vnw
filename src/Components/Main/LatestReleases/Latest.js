@@ -2,9 +2,21 @@ import React, { useState, useEffect } from 'react'
 import axios from "axios"
 import { LatestContainer, Card } from "./LatestStyle"
 import Carousel from 'react-elastic-carousel'
+import Modal from "react-modal"
+
+Modal.setAppElement("#root")
 
 export default function Latest() {
-    const [movies, setMovies] = useState([])
+    const [movies, setMovies] = useState([]);
+    const [modalIsOpen, setIsOpen] = useState(false);
+
+    function openModal() {
+        setIsOpen(true)
+    }
+
+    function closeModal() {
+        setIsOpen(false)
+    }
 
     useEffect(() => {
         getMovies()
@@ -19,7 +31,6 @@ export default function Latest() {
                 }
             })
             setMovies(Api)
-            console.log(Api)
         }).catch((error) => {
             alert(`${error}`)
         })
@@ -29,17 +40,26 @@ export default function Latest() {
 
     return (
         <LatestContainer>
-                <h2>Últimos lançamentos</h2>
-                <Carousel breakPoints={breakPoints} itemsToScroll={5} itemsToShow={5}>
-                    {movies?.map((item) => (
-                        <Card>
-                            <img src={item.image} alt={item.title} />
-                            <h3>{item.title}</h3>
-                            <span>{item.release_date}</span>
+            <h2>Últimos lançamentos</h2>
+            <Carousel breakPoints={breakPoints} itemsToScroll={5} itemsToShow={5}>
+                {movies?.map((item) => (
+                    <Card>
+                        <img src={item.image} alt={item.title} />
+                        <h3>{item.title}</h3>
+                        <button onClick={openModal}>SINOPSE</button>
+                        <Modal
+                            isOpen={modalIsOpen}
+                            onRequestClose={closeModal}
+                            contentLabel="Example modal"
+                            overlayClassName="modal-overlay"
+                            className="modal-content" >
+                                <h2>djdjdjdjjdjdj</h2>
                             <p>{item.overview}</p>
-                        </Card>
-                    ))}
-                </Carousel>
+                            <button onClick={closeModal}>Fechar</button>
+                        </Modal>
+                    </Card>
+                ))}
+            </Carousel>
         </LatestContainer>
     )
 }

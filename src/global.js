@@ -13,7 +13,7 @@ export const theme = {
   colors: {
     orangeBtn: "#d53a00",
     greyTrailerBtn: "#717171",
-    greenMoviesBtn: "#738075",
+    green: "#738075",
     text: "#f6f6f6",
     white: "#ffffff",
     black: "#000000",

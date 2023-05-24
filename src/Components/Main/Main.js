@@ -7,7 +7,7 @@ import Header from "../Header/Header"
 
 export const Main = styled.main`
   width: 100%;
-  height: 400vh;
+  max-height: 380vh;
   color: ${({ theme }) => theme.colors.text};
   background-color: ${({ theme }) => theme.colors.black};
   overflow: hidden;

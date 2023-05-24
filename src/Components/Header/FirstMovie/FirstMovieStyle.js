@@ -5,6 +5,7 @@ export const MovieContainer = styled.section`
   height: 110vh;
   background-image: url(${background});
   background-size: 100%;
+  background-repeat: no-repeat;
   color: ${({ theme }) => theme.colors.text};
   display: flex;
   flex-direction: column;

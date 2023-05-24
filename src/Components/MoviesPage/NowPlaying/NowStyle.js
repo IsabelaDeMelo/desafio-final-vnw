@@ -1,6 +1,9 @@
 import styled from "styled-components";
 
-export const TVContainer = styled.section`
+export const NowContainer = styled.section`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   color: ${({ theme }) => theme.colors.text};
   background-color: ${({ theme }) => theme.colors.black};
 
@@ -9,28 +12,21 @@ export const TVContainer = styled.section`
     text-align: center;
   }
 `;
-
-export const TVCarousel = styled.section`
+export const NowCarousel = styled.section`
   width: 100%;
-  max-height: 110vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   gap: 2rem;
-  padding-top: 7rem;
 
   h2 {
     text-align: center;
   }
-
-  .rec-pagination {
-    display: none;
-  }
 `;
 
-export const TVCard = styled.section`
+export const NowCard = styled.section`
   width: 90%;
-  height: 80vh;
+  height: 55vh;
   display: flex;
   gap: 0.5rem;
   font-size: 0.9rem;
@@ -48,9 +44,5 @@ export const TVCard = styled.section`
   img {
     width: 50%;
     height: 50vh;
-  }
-
-  .rec-pagination {
-    display: none;
   }
 `;
