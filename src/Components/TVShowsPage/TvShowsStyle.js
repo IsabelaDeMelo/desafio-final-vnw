@@ -23,6 +23,7 @@ export const TVContainer = styled.section`
 
 export const TVCarousel = styled.section`
   width: 100%;
+  background-color: ${({ theme }) => theme.colors.black};
   display: flex;
   flex-direction: column;
   justify-content: center;
