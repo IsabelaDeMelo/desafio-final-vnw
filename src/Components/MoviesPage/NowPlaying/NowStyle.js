@@ -22,6 +22,18 @@ export const NowContainer = styled.section`
     background-color: #738075;
     opacity: 1;
   }
+
+  .rec-dot {
+    background-color: grey;
+  }
+
+  .rec-dot_active {
+    box-shadow: 1px 1px 2px 3px #738075;
+  }
+
+  .rec-dot:hover {
+    box-shadow: 1px 1px 1px 3px #738075;
+  }
 `;
 export const NowCarousel = styled.section`
   width: 100%;
