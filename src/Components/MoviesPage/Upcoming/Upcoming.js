@@ -4,7 +4,6 @@ import Carousel from "react-elastic-carousel"
 import { UpcomingContainer, UpcomingCarousel, UpcomingCard } from "./UpcomingStyle"
 
 export default function MoviePage() {
-
     const [upcoming, setUpcoming] = useState([])
 
     useEffect(() => {

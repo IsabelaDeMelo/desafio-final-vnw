@@ -8,15 +8,15 @@ Modal.setAppElement("#root")
 
 export default function Latest() {
     const [movies, setMovies] = useState([]);
-    const [modalIsOpen, setIsOpen] = useState(false);
+    // const [modalIsOpen, setIsOpen] = useState(false);
 
-    function openModal() {
-        setIsOpen(true)
-    }
+    // function openModal() {
+    //     setIsOpen(true)
+    // }
 
-    function closeModal() {
-        setIsOpen(false)
-    }
+    // function closeModal() {
+    //     setIsOpen(false)
+    // }
 
     useEffect(() => {
         getMovies()
@@ -46,7 +46,7 @@ export default function Latest() {
                     <Card>
                         <img src={item.image} alt={item.title} />
                         <h3>{item.title}</h3>
-                        <button onClick={openModal}>SINOPSE</button>
+                        {/* <button onClick={openModal}>SINOPSE</button>
                         <ModalBox>
                             <Modal
                                 isOpen={modalIsOpen}
@@ -57,7 +57,7 @@ export default function Latest() {
                                 <p>{item.overview}</p>
                                 <button onClick={closeModal}>Fechar</button>
                             </Modal>
-                        </ModalBox>
+                        </ModalBox> */}
                     </Card>
                 ))}
             </Carousel>
