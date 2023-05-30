@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react'
 import axios from "axios"
-import { LatestContainer, Card, ModalBox } from "./LatestStyle"
+import { LatestContainer, Card } from "./LatestStyle"
 import Carousel from 'react-elastic-carousel'
-import Modal from "react-modal"
+// import Modal from "react-modal"
 
-Modal.setAppElement("#root")
+// Modal.setAppElement("#root")
 
 export default function Latest() {
     const [movies, setMovies] = useState([]);
